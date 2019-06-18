@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,53 +6,103 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     
-    <!--Link to css-->
-    <!-- <link rel="stylesheet" type="text/css" href="#"> -->
+    Link to css
+    <link rel="stylesheet" type="text/css" href="#">
 
-    <!--Link to Bootstrap CSS -->
+    Link to Bootstrap CSS
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!--Link to Bootstrap CDN-->
-    <!-- <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha384-LS4/wo5Z/8SLpOLHs0IbuPAGOWTx30XSoZJ8o7WKH0UJhRpjXXTpODOjfVnNjeHu" crossorigin="anonymous">      -->
+    Link to Bootstrap CDN
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha384-LS4/wo5Z/8SLpOLHs0IbuPAGOWTx30XSoZJ8o7WKH0UJhRpjXXTpODOjfVnNjeHu" crossorigin="anonymous">     
 
-    <!--Link to jquery-->
+    Link to jquery
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 
-    <!-- Firebase References -->
-    <!-- <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script> -->
-    <!-- <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script> -->
+    Firebase References
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
 
 </head>
 <body>
     
-    <!-- <form id="search-term">
+    <form id="search-term">
         Search artists here!
         <br> -->
-        <div>
+        <!-- <div>
                 <form id="buttons">
                     <span><input id="searchBar" type="text"><input id="sBtn" value="Search" type="submit"></span>
                 </form>
             </div>
-        <!-- <br>
+        <br>
         <input id= "submit" type="submit" value="Submit">
     </form> -->
     
-    <div>
-    <iframe src="https://www.youtube.com/embed/yourvideoidgoeshere?rel=0">
-    </iframe>
-    <div id="search-results"></div>
+    <!-- <div> -->
+    <!-- <iframe src="https://www.youtube.com/embed/yourvideoidgoeshere?rel=0"> -->
+    <!-- </iframe> -->
+    <!-- <div id="search-results"></div> -->
 
+    <!-- </div> -->
+<!-- ======================================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h2 class="text-center">Search for something , we dare you!</h2>
+            <hr>
+            <div> <img src="Assets/Images/ahemloogo.png" alt="logo" style="width:500px;height:600px"></div>
+            <p class="text-center">Search Youtube Videos</p>
+            <div><p id="taste"></p></div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <form id="search-form" name="search-form" class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-md-6 col-md-offset-2">
+                            <input type="text" class="form-control" id="query" placeholder="SEARCH FAV ARTIST">
+                        </div>
+                        <div class="col-md-4">
+                            <button id="submit-button" class="btn btn-primary">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div id="results"></div>
+            <div id="buttons"></div>
+        </div>
+    
     </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src ="app.js"></script>
+    </body>
+    </html> -->
 
 
+
+    <!-- ================================= -->
     <!--Link to JS-->
     <script src="script.js"></script>
 
     <!-- Link to ajax -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
     <!--Link to Moment.js-->
-    <!-- <script src=“https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js“></script>  -->
+    <script src=“https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js“></script>
     
 </body>
 </html>

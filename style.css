@@ -1,0 +1,12 @@
+
+body{
+    background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(91,191,208,1) 24%, rgba(6,74,165,1) 44%, rgba(119,4,190,1) 59%, rgba(7,43,144,1) 69%, rgba(0,212,255,1) 100%);
+  font-family: 'Swanky and Moo Moo', cursive;
+  }
+  /* .info{
+      float:right;
+      height:500px;
+      width:300px;
+      background:#fff;
+  } */
