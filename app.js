@@ -84,10 +84,12 @@ function buildOutput(item) {
     var channelTitle = item.snippet.channelTitle;
     var videoDate = item.snippet.publishedAt;
 
-    return `<div class="col-md-5 video-thumbnail">
+    return `<div class="col-md-8 video-thumbnail">
                     <iframe width="440" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
                     <hr>
+                    <div>
                     <h4>${title}</h4>
                     <p>${description}</p>
-                </div>`;
+                    </div>
+                    </div>`;
 }
