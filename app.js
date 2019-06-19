@@ -6,7 +6,9 @@ text.set({
 
 text.start();
 text.reveal(4000);
-var apiKey = 'AIzaSyDFgOsikUd4N7U-wnCcsZ8cRmUQEUQIfEo';
+
+
+var apiKey = 'AIzaSyAZaVxKparELJBO6kH4ddJItn1RrGtIxaQ';
 var url = 'https://www.googleapis.com/youtube/v3/search';
 
 $(document).ready(function () {
@@ -28,10 +30,10 @@ $(document).ready(function () {
     };
   
     $.ajax(taste).done(function (data) {
-      console.log(data.Similar.Results);
-      for (var i = 0; i < data.Similar.Results.length; i++)
-        $("#suggestions").prepend("<p>" + data.Similar.Results[i].Name + "</p>" + "<p><a href='" + data.Similar.Results[i].wUrl + "'/a></p>" + "<p><a href='" +data.Similar.Results[i].yUrl + "'/a></p>");
-    });
+        console.log(data.Similar.Results);
+        for (var i = 0; i < data.Similar.Results.length; i++)
+          $("#suggestions").prepend("<p>" + data.Similar.Results[i].Name + "</p>" + "<p><a href='" + data.Similar.Results[i].wUrl + "'>" + data.Similar.Results[i].wUrl + "</a></p>" + "<p><a href='" +data.Similar.Results[i].yUrl + "'>" + data.Similar.Results[i].yUrl + "/a></p>");
+      });
 
 
 
