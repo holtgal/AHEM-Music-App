@@ -1,7 +1,7 @@
 const text =  baffle(".data");
 text.set({
   characters: '░▒░ ░██░> ████▓ >█> ░/█>█ ██░░ █<▒ ▓██░ ░/░▒',
-        speed: 120
+        speed: 100
 });
 
 text.start();
@@ -89,8 +89,5 @@ function buildOutput(item) {
                     <hr>
                     <h4>${title}</h4>
                     <p>${description}</p>
-                    <hr>
-                    <p>Published By: ${channelTitle}</p>
-                    <p>Published On: ${videoDate}</p>
                 </div>`;
 }
