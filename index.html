@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo&display=swap" rel="stylesheet">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Text Reveal-Animation</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+    <style>
+            @import url('https://fonts.googleapis.com/css?family=PT+Sans:700&display=swap');
+     </style>
 </head>
 
 <body>
+    <div class="box">
+        <div class="data">WELCOME TO AHEM</div>
 
-    <div class="container">
-        <div class="jumbotron">
-            <h2 class="text-center">Search for something , we dare you!</h2>
-            <hr>
-            <div> <img src="assets/images/ahemloogo.png" alt="logo" style="width:500px;height:600px"></div>
-            <p class="text-center">Search Youtube Videos</p>
-            <div><p id="taste"></p></div>
-        </div>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <form id="search-form" name="search-form" class="form-horizontal">
-                    <div class="form-group">
-                        <div class="col-md-6 col-md-offset-2">
-                            <input type="text" class="form-control" id="query" placeholder="SEARCH FAV ARTIST">
-                        </div>
-                        <div class="col-md-4">
-                            <button id="submit-button" class="btn btn-primary">Search</button>
-                        </div>
+
+
+
+        <h1>
+            <img src="assets/images/ahemloogo.png" alt="logo" style="width:300px;height:400px" class="center">
+        </h1>
+
+            <div class="container">
+
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-md-offset-2 justify-content-center">
+                        <form id="search-form" name="search-form" class="center">
+                            <div class="form-group text-center">
+
+                                <div class="col-md-12">
+
+                                    <input type="text" class="form-control" id="query" placeholder="SEARCH YOUTUBE">
+                                </div>
+                                <div class="col-md-12">
+                                    <button id="submit-button" class="btn btn-primary">Search</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div id ="results" class = "col-md-6"></div>
-            
-            <div id ="suggestions" class ="col-md-4 offset-md-1">
+            <div class="row">
+               
+                <div class="col-md-6" id="resultsVideo"></div>
+                <div class="col-md-4 offset-md-1 " id="suggestions"></div>
             </div>
 
-            <!-- <div id="results"></div> -->
+            <!-- </div> -->
             <div id="buttons"></div>
         </div>
     
@@ -53,11 +66,9 @@
     <!-- Link to JS  -->
     <script src="assets/javascript/script.js"></script>
 
-    <!-- Link to ajax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-    <!--Link to Moment.js-->
-    <script src=“https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js“></script>
-    
+   
+    <!-- <script src="app.js"></script> -->
 </body>
+
 </html>
+
