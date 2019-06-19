@@ -71,7 +71,7 @@ function search() {
             $.each(data.items, function (index, item) {
                 var output = buildOutput(item);
                 // Display Results
-                $('#resultsVideo').append(output);
+                $('#resultsVideo').prepend(output);
             });
         }
     )
