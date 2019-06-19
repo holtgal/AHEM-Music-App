@@ -6,7 +6,7 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(91,191,208,1) 24%, r
 font-family: 'PT Sans', sans-serif;
 font-size: 30px;
 color:white;
-text-shadow: -3px -3px 0 black;
+text-shadow: -3px -3px 3px black;
 width:90%;
 margin-left: 50px;
 
