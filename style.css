@@ -1,7 +1,58 @@
 
+
 body{
   background: rgb(2,0,36);
 background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(91,191,208,1) 24%, rgba(6,74,165,1) 44%, rgba(119,4,190,1) 59%, rgba(7,43,144,1) 69%, rgba(0,212,255,1) 100%);
 font-family: 'Swanky and Moo Moo', cursive;
+font-size: 30px;
+color:rgb(224, 136, 85);
+width:90%;
+
 }
+p {
+  display: block;
   
+
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 90%;
+    margin-left: 0;
+  }
+}
+header{
+  
+}
+padding:0;
+  margin:0;
+  border:0;
+ 
+
+.container{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.data{
+  color:black;
+  font-family: 'Swanky and Moo Moo', cursive;
+  font-weight:500;
+  text-align:centre;
+  letter-spacing:.5rem;
+  font-size:50px;
+}
