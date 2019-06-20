@@ -1,7 +1,7 @@
-const text = baffle(".data");
+const text =  baffle(".data");
 text.set({
-    characters: '░▒░ ░██░> ████▓ >█> ░/█>█ ██░░ █<▒ ▓██░ ░/░▒',
-    speed: 100
+  characters: '░▒░ ░██░> ████▓ >█> ░/█>█ ██░░ █<▒ ▓██░ ░/░▒',
+        speed: 100
 });
 
 text.start();
@@ -20,24 +20,21 @@ $(document).ready(function () {
         e.preventDefault();
         search();
         var question = $("#query").val();
-        console.log(question)
-        // $("#search-form").empty()
-        var taste = {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://cors-anywhere.herokuapp.com/https://tastedive.com/api/similar?q=" + question + "&type=band&info=1&limit=10&k=338293-Project1-8GU1MS4N&type%20=band",
-            "method": "GET",
-        };
+    console.log(question)
+    // $("#search-form").empty()
+    var taste = {
+      "async": true,
+      "crossDomain": true,
+      "url": "https://cors-anywhere.herokuapp.com/https://tastedive.com/api/similar?q=" + question + "&type=band&info=1&limit=5&k=338293-Project1-8GU1MS4N&type%20=band",
+      "method": "GET",
+    };
+  
+    $.ajax(taste).done(function (data) {
 
-        $.ajax(taste).done(function (data) {
-            console.log(data.Similar.Results);
-            for (var i = 0; i < data.Similar.Results.length; i++)
-                $("#suggestions").prepend("<p>" + data.Similar.Results[i].Name + "</p>" + "<p><a href='" + data.Similar.Results[i].wUrl + "'>" + data.Similar.Results[i].wUrl + "</a></p>" + "<p><a href='" + data.Similar.Results[i].yUrl + "'>" + data.Similar.Results[i].yUrl + "/a></p>");
-        });
-
-
-
-
+        console.log(data.Similar.Results);
+        for (var i = 0; i < data.Similar.Results.length; i++)
+          $("#suggestions").prepend("<p>Related Artitst:<br> " + data.Similar.Results[i].Name + "</p>" + "<p>Wiki: <a href='" + data.Similar.Results[i].wUrl + "' target='_blank'>" + data.Similar.Results[i].wUrl + "</a></p>" + "<p>YouTube: <a href='" +data.Similar.Results[i].yUrl + "' target='_blank'>" + data.Similar.Results[i].yUrl + "/a></p>");
+      });
 
     })
 });
@@ -71,6 +68,7 @@ function search() {
             $.each(data.items, function (index, item) {
                 var output = buildOutput(item);
                 // Display Results
+
                 $('#resultsVideo').prepend(output);
             });
         }
@@ -92,6 +90,6 @@ function buildOutput(item) {
                     <div>
                     <h4>${title}</h4>
                     <p>${description}</p>
-                </div>
-                </div>`;
+                    </div>
+                    </div>`;
 }
